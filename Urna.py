@@ -10,3 +10,8 @@ class Urna:
 
     def novoCandidato(self, candidato):
         self.Candidatos.append(candidato)
+
+    def getCandidato(self, numero):
+        for i in self.Candidatos:
+            if i.getNumero() == numero:
+                return i
